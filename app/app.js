@@ -6,7 +6,10 @@ angular.module('app', ['ngRoute','app.controllers'])
         $routeProvider.when('/',{
             templateUrl:'views/post.html',
             controller: 'PostController'
-        }).otherwise({
-            redirectTo: '/'
-        });
+        }).when('/post/:id',{
+            templateUrl: 'views/singlepost.html',
+            controller:'SinglePostController'
+        })
+
+
     }]);
