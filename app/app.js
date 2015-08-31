@@ -9,6 +9,9 @@ angular.module('app', ['ngRoute','app.controllers'])
         }).when('/post/:id',{
             templateUrl: 'views/singlepost.html',
             controller:'SinglePostController'
+        }).when('/page/:id',{
+            templateUrl: 'views/page.html',
+            controller: 'SinglePageController'
         })
 
 
